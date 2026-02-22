@@ -1,0 +1,433 @@
+@tailwind base;
+
+/* Pain level colors */
+:root {
+  --pain-mild: 48 96% 50%;
+  /* Yellow */
+  --pain-moderate: 25 95% 53%;
+  /* Orange */
+  --pain-severe: 0 84% 60%;
+  /* Red */
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* Physiotherapy Clinic Design System
+   Calming, medical-grade aesthetic with aurora-inspired colors
+   Soft purples, healing greens, sky blues
+*/
+
+@layer base {
+  :root {
+
+    /* ===============================
+     CORE PALETTE (60-10-30)
+     =============================== */
+
+    /* 🌿 SAGE — 60% DOMINANT */
+    --sage-50: 150 35% 97%;
+    --sage-100: 150 35% 94%;
+    --sage-200: 150 40% 88%;
+    --sage-300: 150 40% 75%;
+    --sage-400: 150 40% 65%;
+    --sage-500: 150 42% 58%;
+    --sage-600: 150 45% 52%;
+
+    /* 🟣 PURPLE — 10% ACCENT ONLY */
+    --purple-400: 268 55% 55%;
+    --purple-500: 268 55% 48%;
+    --purple-600: 268 60% 42%;
+
+    /* 💧 BLUE — 30% STRONG SECONDARY */
+    --blue-400: 200 75% 68%;
+    --blue-500: 200 75% 60%;
+    --blue-600: 200 75% 52%;
+
+    /* ===============================
+     BASE UI
+     =============================== */
+
+    --background: var(--sage-50);
+    --foreground: 230 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--foreground);
+
+    --muted: var(--sage-100);
+    --muted-foreground: 230 15% 40%;
+
+    --border: 150 20% 85%;
+    --input: 150 25% 90%;
+    --ring: var(--blue-500);
+    /* blue focus instead of purple */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--foreground);
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* ===============================
+     PRIMARY SYSTEM
+     =============================== */
+
+    --primary: var(--sage-600);
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: var(--blue-500);
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: var(--aurora-green);
+    --accent-foreground: 0 0% 100%;
+
+    /* ===============================
+     HERO GRADIENT (60-10-30 split)
+     =============================== */
+
+    /* ===============================
+     AURORA COLORS
+     =============================== */
+    --aurora-green: 158 60% 50%;
+    /* Dominant Green */
+    --aurora-blue: 199 80% 60%;
+    /* Medium Blue */
+    --aurora-purple: 262 60% 65%;
+    /* Hint of Purple */
+    --aurora-pink: 320 60% 70%;
+    /* Complementary */
+
+    /* ===============================
+     HERO GRADIENT (Green > Blue > Purple)
+     =============================== */
+
+    --hero-gradient: linear-gradient(135deg,
+        hsl(var(--aurora-green) / 0.15) 0%,
+        hsl(var(--aurora-green) / 0.10) 40%,
+        hsl(var(--aurora-blue) / 0.10) 70%,
+        hsl(var(--aurora-purple) / 0.10) 100%);
+
+    /* ===============================
+     CTA BUTTON (Sage → Blue heavy)
+     =============================== */
+
+    --cta-gradient: linear-gradient(90deg,
+        hsl(150 45% 52%) 0%,
+        hsl(150 45% 52%) 60%,
+        /* 60% sage */
+        hsl(200 75% 60%) 90%,
+        /* 30% blue */
+        hsl(268 55% 48%) 100%
+        /* 10% purple accent */
+      );
+
+    /* ===============================
+     LOGO GRADIENT
+     =============================== */
+
+    --logo-gradient: linear-gradient(135deg,
+        hsl(150 45% 55%) 0%,
+        hsl(200 75% 65%) 75%,
+        hsl(268 55% 50%) 100%);
+
+    /* ===============================
+     SHADOWS
+     =============================== */
+
+    --shadow-soft: 0 4px 20px -4px hsl(150 40% 50% / 0.15);
+    --shadow-glow: 0 0 40px -10px hsl(200 75% 60% / 0.25);
+    --shadow-card: 0 8px 30px -8px hsl(220 30% 40% / 0.08);
+
+    /* ===============================
+     SIDEBAR
+     =============================== */
+
+    --sidebar-background: var(--sage-50);
+    --sidebar-foreground: var(--blue-600);
+
+    --sidebar-primary: var(--sage-600);
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: var(--blue-500);
+    --sidebar-accent-foreground: 0 0% 100%;
+
+    --sidebar-border: var(--sage-200);
+    --sidebar-ring: var(--blue-500);
+
+    /* ===============================
+     UI
+     =============================== */
+
+    --radius: 1.25rem;
+  }
+
+
+  .dark {
+    --background: 230 25% 10%;
+    --foreground: 220 30% 95%;
+
+    --card: 230 25% 14%;
+    --card-foreground: 220 30% 95%;
+
+    --popover: 230 25% 14%;
+    --popover-foreground: 220 30% 95%;
+
+    --primary: 262 60% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 158 45% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 199 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 230 20% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 20% 20%;
+    --input: 230 20% 20%;
+    --ring: 262 60% 65%;
+
+    --sidebar-background: 230 25% 12%;
+    --sidebar-foreground: 220 30% 95%;
+    --sidebar-primary: 262 60% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 158 45% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 230 20% 20%;
+    --sidebar-ring: 262 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+
+@layer components {
+
+  /* Aurora Background Animation */
+  .aurora-bg {
+    @apply relative overflow-hidden;
+    background: linear-gradient(135deg,
+        hsl(var(--background)) 0%,
+        hsl(var(--aurora-green) / 0.15) 25%,
+        hsl(var(--aurora-green) / 0.1) 50%,
+        hsl(var(--aurora-blue) / 0.1) 75%,
+        hsl(var(--aurora-purple) / 0.05) 95%,
+        hsl(var(--background)) 100%);
+  }
+
+  .aurora-orb {
+    @apply absolute rounded-full blur-[80px] opacity-70 mix-blend-multiply filter;
+    animation: aurora-float 20s ease-in-out infinite;
+  }
+
+  .aurora-orb-1 {
+    @apply w-96 h-96 -top-48 -left-48;
+    background: radial-gradient(circle, hsl(var(--aurora-green)) 0%, transparent 70%);
+    /* Swapped to Green for dominance */
+    animation-delay: 0s;
+  }
+
+  .aurora-orb-2 {
+    @apply w-80 h-80 top-1/4 right-0;
+    background: radial-gradient(circle, hsl(var(--aurora-purple)) 0%, transparent 70%);
+    /* Swapped to Purple (hint) */
+    animation-delay: -5s;
+  }
+
+  .aurora-orb-3 {
+    @apply w-72 h-72 bottom-0 left-1/4;
+    background: radial-gradient(circle, hsl(var(--aurora-blue)) 0%, transparent 70%);
+    animation-delay: -10s;
+  }
+
+  .aurora-orb-4 {
+    @apply w-64 h-64 top-1/2 left-1/2;
+    background: radial-gradient(circle, hsl(var(--aurora-pink)) 0%, transparent 70%);
+    animation-delay: -7s;
+  }
+
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-white/20 shadow-lg;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
+  }
+
+  /* Soft Button Glow */
+  .btn-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Pain Intensity Gradient */
+  .pain-gradient {
+    background: linear-gradient(90deg,
+        hsl(var(--pain-low)) 0%,
+        hsl(var(--pain-medium)) 50%,
+        hsl(var(--pain-high)) 100%);
+  }
+
+  /* Body Part Highlight */
+  .body-part {
+    @apply transition-all duration-300 cursor-pointer;
+    fill: hsl(var(--muted));
+  }
+
+  .body-part:hover {
+    fill: hsl(var(--primary) / 0.3);
+    filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.5));
+  }
+
+  .body-part.selected {
+    fill: hsl(var(--primary) / 0.5);
+    filter: drop-shadow(0 0 12px hsl(var(--primary) / 0.6));
+  }
+
+  /* Step indicator */
+  .step-indicator {
+    @apply flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300;
+  }
+
+  .step-indicator.active {
+    @apply bg-primary text-primary-foreground shadow-lg;
+    box-shadow: 0 0 20px -5px hsl(var(--primary) / 0.5);
+  }
+
+  .step-indicator.completed {
+    @apply bg-secondary text-secondary-foreground;
+  }
+
+  .step-indicator.pending {
+    @apply bg-muted text-muted-foreground;
+  }
+}
+
+@layer utilities {
+
+  /* Fade in animation */
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out forwards;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+}
+
+@keyframes aurora-float {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+
+  75% {
+    transform: translate(20px, 10px) scale(1.05);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-soft {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
