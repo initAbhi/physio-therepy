@@ -159,7 +159,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
     const termsContent = (
         <div className="space-y-4 text-sm text-foreground">
             <h3 className="font-bold text-lg">1. Introduction</h3>
-            <p>Welcome to PhysioHeal. By booking an appointment, you agree to these Terms and Conditions.</p>
+            <p>Welcome to adaptus. By booking an appointment, you agree to these Terms and Conditions.</p>
 
             <h3 className="font-bold text-lg">2. Booking & Cancellation</h3>
             <p>Appointments must be booked in advance. Cancellations made less than 24 hours before the scheduled time may incur a fee.</p>
@@ -333,7 +333,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
                             <h1 className="font-display text-3xl font-bold mb-4">Appointment Confirmed!</h1>
                             <p className="text-muted-foreground mb-8">
-                                Thank you for booking with PhysioHeal. We've sent a confirmation to your email.
+                                Thank you for booking with adaptus. We've sent a confirmation to your email.
                             </p>
 
                             <div className="bg-muted/50 rounded-2xl p-6 text-left space-y-4 mb-8">
@@ -344,7 +344,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <MapPin className="w-5 h-5 text-primary" />
-                                        <span>PhysioHeal Clinic, 123 Wellness Street</span>
+                                        <span>adaptus Clinic, 123 Wellness Street</span>
                                     </div>
                                 </div>
                             </div>

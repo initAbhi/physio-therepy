@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center shadow-soft">
                 <Image src="/adaptus.png" alt="Adaptus Logo" width={96} height={96} className="w-16 h-16 md:w-24 md:h-24 object-contain" />
               </div>
-              <span className="font-display font-bold text-xl">PhysioHeal</span>
+              <span className="font-display font-bold text-xl">adaptus</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Expert physiotherapy care for pain-free living. Your journey to recovery starts here.
@@ -58,14 +58,14 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>📍 123 Wellness Street, Health City</li>
               <li>📞 +1 (555) 123-4567</li>
-              <li>✉️ care@physioheal.com</li>
+              <li>✉️ care@adaptus.com</li>
               <li>🕐 Mon-Sat: 9AM - 8PM</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© 2024 PhysioHeal. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>© 2024 adaptus. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-                            About <span className="gradient-text">PhysioHeal</span>
+                            About <span className="gradient-text">adaptus</span>
                         </h1>
                         <p className="text-lg text-muted-foreground">
                             Dedicated to transforming lives through expert physiotherapy care and
@@ -35,7 +35,7 @@ export default function AboutPage() {
                                 Empowering You to Live Without Pain
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                At PhysioHeal, we believe that everyone deserves to live a life free from physical
+                                At adaptus, we believe that everyone deserves to live a life free from physical
                                 limitations. Our mission is to provide accessible, personalized, and effective
                                 physiotherapy care that helps you achieve your health goals.
                             </p>

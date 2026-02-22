@@ -25,7 +25,7 @@ export const sendBookingNotification = async (bookingDetails: any) => {
         const mailOptions = {
             from: process.env.EMAIL_FROM,
             to: process.env.EMAIL_TO,
-            subject: 'New Appointment Booking - PhysioHeal',
+            subject: 'New Appointment Booking - adaptus',
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
                     <h2 style="color: #333;">New Appointment Booking</h2>

@@ -30,7 +30,7 @@ const Header = () => {
             <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center shadow-soft group-hover:shadow-glow transition-shadow">
               <Image src="/adaptus.png" alt="Adaptus Logo" width={56} height={56} className="w-10 h-10 md:w-14 md:h-14 object-contain" />
             </div>
-            <span className="font-bold text-xl sm:block">PhysioHeal</span>
+            <span className="font-bold text-xl sm:block">adaptus</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -20,7 +20,7 @@ export function TermsAcceptanceModal({ isOpen, onClose, onAccept }: TermsAccepta
     const termsContent = (
         <div className="space-y-4 text-sm text-foreground">
             <h3 className="font-bold text-lg">1. Introduction</h3>
-            <p>Welcome to PhysioHeal. By booking an appointment, you agree to these Terms and Conditions.</p>
+            <p>Welcome to adaptus. By booking an appointment, you agree to these Terms and Conditions.</p>
 
             <h3 className="font-bold text-lg">2. Booking & Cancellation</h3>
             <p>Appointments must be booked in advance. Cancellations made less than 24 hours before the scheduled time may incur a fee.</p>
